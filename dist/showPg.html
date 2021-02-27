@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/stayFortPg/dist/css/style.css" />
+
+    <title>Stay Fort | Pg</title>
+  </head>
+  <body>
+    <div class="searchNav">
+      <span>
+        <i class="fa fa-search" aria-hidden="true"></i>
+        <input type="text" placeholder="Search for city, location" />
+        <button>
+          <i class="bx bx-current-location"></i>
+        </button>
+      </span>
+    </div>
+    <section>
+      <div class="pg">
+        <div class="leftSideBar">
+          <div class="sideBarHeading">
+            <h3>Filter</h3>
+            <p>Clear All</p>
+          </div>
+          <div class="sort sideBarSection">
+            <h4>Sort By</h4>
+            <label>
+              <input type="radio" name="radio-button" value="css" checked />
+              <span>Lowest to Highest</span>
+            </label>
+            <label>
+              <input type="radio" name="radio-button" value="no" />
+              <span>Highest to Lowest</span>
+            </label>
+          </div>
+          <div class="locality sideBarSection">
+            <h4>Locality</h4>
+            <label class="container"
+              >One
+              <input type="checkbox" checked="checked" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="container"
+              >Two
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="container"
+              >Three
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="container"
+              >Four
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+          </div>
+          <div class="price sideBarSection">
+            <h4>Price</h4>
+            <div class="sliderContainer">
+              <input
+                type="range"
+                min="1000"
+                max="10000"
+                value="1000"
+                class="slider"
+                id="myRange"
+              />
+            </div>
+            <div class="priceAmount">
+              <span>
+                <p>1</p>
+                <span>K</span>
+              </span>
+              <span>
+                <p>100</p>
+                <span>K</span>
+              </span>
+            </div>
+          </div>
+          <div class="gender sideBarSection">
+            <h4>Gender</h4>
+            <label>
+              <input type="radio" name="gender" value="css" checked />
+              <span>Male</span>
+            </label>
+            <label>
+              <input type="radio" name="gender" value="no" />
+              <span>Female</span>
+            </label>
+            <label>
+              <input type="radio" name="gender" value="no" />
+              <span>Unisex</span>
+            </label>
+          </div>
+          <div class="occupation sideBarSection">
+            <h4>Occupation</h4>
+            <label>
+              <input type="radio" name="occupation" value="css" checked />
+              <span>Student</span>
+            </label>
+            <label>
+              <input type="radio" name="occupation" value="no" />
+              <span>Working professional</span>
+            </label>
+          </div>
+          <div class="sideBarButton">
+            <button>Apply</button>
+          </div>
+        </div>
+        <div class="pgGridRight">
+          <h1>Search Results for</h1>
+          <span>New York</span>
+          <div class="pgGrid">
+            <div class="grid-item">
+              <div class="card-container">
+                <div class="card-img"></div>
+                <div class="card-content">
+                  <span>
+                    <p class="card-name">City Lights</p>
+                    <p class="card-gender">Male</p>
+                  </span>
+                  <p class="card-address">
+                    Near louis mall, 24 street, New York
+                  </p>
+                  <div class="distance">
+                    <p class="card-distance">2.4 miles</p>
+                    <p>&nbsp; from &nbsp;</p>
+                    <p class="card-distance-from">louis mall</p>
+                  </div>
+                </div>
+                <hr />
+                <div class="card-bottom">
+                  <span>
+                    <p>Starts from</p>
+                    <span class="rupee">
+                      <i class="bx bx-rupee"></i>
+                      <p class="rent">15000</p>
+                      <p>/mo*</p>
+                    </span>
+                  </span>
+                  <button>More</button>
+                </div>
+              </div>
+            </div>
+            <div class="grid-item">
+              <div class="card-container">
+                <div class="card-img"></div>
+                <div class="card-content">
+                  <span>
+                    <p class="card-name">City Lights</p>
+                    <p class="card-gender">Male</p>
+                  </span>
+                  <p class="card-address">
+                    Near louis mall, 24 street, New York
+                  </p>
+                  <div class="distance">
+                    <p class="card-distance">2.4 miles</p>
+                    <p>&nbsp; from &nbsp;</p>
+                    <p class="card-distance-from">louis mall</p>
+                  </div>
+                </div>
+                <hr />
+                <div class="card-bottom">
+                  <span>
+                    <p>Starts from</p>
+                    <span class="rupee">
+                      <i class="bx bx-rupee"></i>
+                      <p class="rent">15000</p>
+                      <p>/mo*</p>
+                    </span>
+                  </span>
+                  <button>More</button>
+                </div>
+              </div>
+            </div>
+            <div class="grid-item">
+              <div class="card-container">
+                <div class="card-img"></div>
+                <div class="card-content">
+                  <span>
+                    <p class="card-name">City Lights</p>
+                    <p class="card-gender">Male</p>
+                  </span>
+                  <p class="card-address">
+                    Near louis mall, 24 street, New York
+                  </p>
+                  <div class="distance">
+                    <p class="card-distance">2.4 miles</p>
+                    <p>&nbsp; from &nbsp;</p>
+                    <p class="card-distance-from">louis mall</p>
+                  </div>
+                </div>
+                <hr />
+                <div class="card-bottom">
+                  <span>
+                    <p>Starts from</p>
+                    <span class="rupee">
+                      <i class="bx bx-rupee"></i>
+                      <p class="rent">15000</p>
+                      <p>/mo*</p>
+                    </span>
+                  </span>
+                  <button>More</button>
+                </div>
+              </div>
+            </div>
+            <div class="grid-item">
+              <div class="card-container">
+                <div class="card-img"></div>
+                <div class="card-content">
+                  <span>
+                    <p class="card-name">City Lights</p>
+                    <p class="card-gender">Male</p>
+                  </span>
+                  <p class="card-address">
+                    Near louis mall, 24 street, New York
+                  </p>
+                  <div class="distance">
+                    <p class="card-distance">2.4 miles</p>
+                    <p>&nbsp; from &nbsp;</p>
+                    <p class="card-distance-from">louis mall</p>
+                  </div>
+                </div>
+                <hr />
+                <div class="card-bottom">
+                  <span>
+                    <p>Starts from</p>
+                    <span class="rupee">
+                      <i class="bx bx-rupee"></i>
+                      <p class="rent">15000</p>
+                      <p>/mo*</p>
+                    </span>
+                  </span>
+                  <button>More</button>
+                </div>
+              </div>
+            </div>
+            <div class="grid-item">
+              <div class="card-container">
+                <div class="card-img"></div>
+                <div class="card-content">
+                  <span>
+                    <p class="card-name">City Lights</p>
+                    <p class="card-gender">Male</p>
+                  </span>
+                  <p class="card-address">
+                    Near louis mall, 24 street, New York
+                  </p>
+                  <div class="distance">
+                    <p class="card-distance">2.4 miles</p>
+                    <p>&nbsp; from &nbsp;</p>
+                    <p class="card-distance-from">louis mall</p>
+                  </div>
+                </div>
+                <hr />
+                <div class="card-bottom">
+                  <span>
+                    <p>Starts from</p>
+                    <span class="rupee">
+                      <i class="bx bx-rupee"></i>
+                      <p class="rent">15000</p>
+                      <p>/mo*</p>
+                    </span>
+                  </span>
+                  <button>More</button>
+                </div>
+              </div>
+            </div>
+            <div class="grid-item">
+              <div class="card-container">
+                <div class="card-img"></div>
+                <div class="card-content">
+                  <span>
+                    <p class="card-name">City Lights</p>
+                    <p class="card-gender">Male</p>
+                  </span>
+                  <p class="card-address">
+                    Near louis mall, 24 street, New York
+                  </p>
+                  <div class="distance">
+                    <p class="card-distance">2.4 miles</p>
+                    <p>&nbsp; from &nbsp;</p>
+                    <p class="card-distance-from">louis mall</p>
+                  </div>
+                </div>
+                <hr />
+                <div class="card-bottom">
+                  <span>
+                    <p>Starts from</p>
+                    <span class="rupee">
+                      <i class="bx bx-rupee"></i>
+                      <p class="rent">15000</p>
+                      <p>/mo*</p>
+                    </span>
+                  </span>
+                  <button>More</button>
+                </div>
+              </div>
+            </div>
+            <div class="grid-item">
+              <div class="card-container">
+                <div class="card-img"></div>
+                <div class="card-content">
+                  <span>
+                    <p class="card-name">City Lights</p>
+                    <p class="card-gender">Male</p>
+                  </span>
+                  <p class="card-address">
+                    Near louis mall, 24 street, New York
+                  </p>
+                  <div class="distance">
+                    <p class="card-distance">2.4 miles</p>
+                    <p>&nbsp; from &nbsp;</p>
+                    <p class="card-distance-from">louis mall</p>
+                  </div>
+                </div>
+                <hr />
+                <div class="card-bottom">
+                  <span>
+                    <p>Starts from</p>
+                    <span class="rupee">
+                      <i class="bx bx-rupee"></i>
+                      <p class="rent">15000</p>
+                      <p>/mo*</p>
+                    </span>
+                  </span>
+                  <button>More</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

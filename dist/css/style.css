@@ -1,0 +1,978 @@
+html,
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #f1f1f1;
+}
+
+header {
+  width: 100%;
+  height: 80px;
+  background-color: #3e80ff;
+}
+
+header nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  width: 5%;
+  height: 80px;
+  background-color: #f1f1f1;
+  display: flex;
+}
+
+header .logo .img {
+  width: 50px;
+  height: 50px;
+  top: 15px;
+  left: 25px;
+  margin: auto;
+  background-image: url("../Img/logo.png");
+  background-size: contain;
+}
+
+header .centerNav {
+  width: 100%;
+  margin: auto;
+}
+
+header .centerNav .nav-items {
+  margin: auto;
+  width: 50%;
+  height: 80px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+header .centerNav .nav-items a {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+header .centerNav .nav-items .active {
+  font-weight: 600;
+}
+
+header .callUs {
+  width: 5%;
+  height: 80px;
+  background-color: #f1f1f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+header .callUs svg {
+  width: 32px;
+  height: 32px;
+  margin-top: 10px;
+  fill: #3e80ff;
+}
+
+header .callUs svg:hover {
+  fill: #3672e2;
+}
+
+.main {
+  display: flex;
+  width: 100%;
+  height: 93vh;
+  box-sizing: border-box;
+  flex-wrap: nowrap;
+}
+
+.main .left {
+  width: 60%;
+  background-color: #3e80ff;
+}
+
+.main .left .mainContent {
+  width: 90%;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  flex-wrap: wrap;
+  color: #f1f1f1;
+}
+
+.main .left .mainContent h1 {
+  font-size: 60px;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 70px;
+}
+
+.main .left .mainContent h3 {
+  color: #f1f1f1;
+  font-weight: 500;
+  padding-top: 20px;
+  letter-spacing: 2px;
+}
+
+.main .left .mainContent p {
+  width: 80%;
+  padding-top: 5px;
+  font-size: 17px;
+}
+
+.main .left .mainContent .cta {
+  margin: 30px 0 0;
+  display: flex;
+  flex-direction: row;
+  width: 30%;
+  text-align: center;
+  padding: 0;
+}
+
+.main .left .mainContent a {
+  width: 150px;
+  padding: 10px 0;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  background-color: #ffffff;
+  color: #3e80ff;
+  font-weight: 500;
+  transition: 0.2s ease;
+}
+
+.main .left .mainContent a:hover {
+  background-color: #3e80ff;
+  color: #f1f1f1;
+}
+
+.main .left .mainContent .contactUs {
+  margin-left: 20px;
+  background-color: #3e80ff;
+  color: #f1f1f1;
+}
+
+.main .left .mainContent .contactUs:hover {
+  background-color: #ffffff;
+  color: #3e80ff;
+}
+
+.main .right {
+  width: 40%;
+  position: relative;
+}
+
+.main .right .landingSearch {
+  width: 100%;
+  z-index: 30;
+}
+
+.main .right .landingSearch span {
+  position: absolute;
+  height: 55px;
+  display: flex;
+  box-sizing: border-box;
+  width: 100%;
+  left: -100px;
+  top: 30%;
+  border-radius: 25px;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #ffffff;
+  box-shadow: 7px 6px 10px rgba(122, 122, 122, 0.109);
+}
+
+.main .right .landingSearch span i {
+  position: absolute;
+  left: 0;
+  width: 10%;
+  font-size: 20px;
+  color: #87878796;
+  text-align: center;
+}
+
+.main .right .landingSearch span input {
+  width: 80%;
+  height: 100%;
+  border: none;
+  font-size: 20px;
+  transition: 0.3s ease;
+}
+
+.main .right .landingSearch span input::placeholder {
+  font-weight: 500;
+  color: #6e6e6e;
+}
+
+.main .right .landingSearch span button {
+  display: flex;
+  position: absolute;
+  right: 0;
+  width: 55px;
+  height: 100%;
+  border-radius: 25px;
+  outline: none;
+  border: none;
+  background-color: #3e80ff;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease;
+}
+
+.main .right .landingSearch span button i {
+  height: 20px;
+  width: 100%;
+  font-size: 22px;
+  color: #ffffff;
+}
+
+.main .right .landingSearch span button:hover {
+  background-color: #3672e2;
+  cursor: pointer;
+}
+
+.main .right svg {
+  width: 120%;
+  position: absolute;
+  left: -170px;
+  bottom: 0;
+}
+
+.main .right .locator {
+  animation: locator 2s infinite alternate;
+}
+
+@keyframes locator {
+  from {
+    transform: translateY(0);
+    fill: #3672e2;
+  }
+  to {
+    transform: translateY(10px);
+    fill: #3e80ff;
+  }
+}
+
+.about {
+  position: relative;
+  width: 90%;
+  min-height: 70vh;
+  margin: 100px;
+  background-color: #3e80ff;
+  display: flex;
+  align-items: center;
+}
+
+.about .aboutContent {
+  width: 50%;
+  margin: 0 80px;
+}
+
+.about h1 {
+  width: 240px;
+  font-size: 50px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.about p {
+  text-align: justify;
+  width: 110%;
+  padding: 20px 0 10px;
+  color: #f1f1f1;
+  font-size: 17px;
+}
+
+.about h4 {
+  width: 110%;
+  text-align: end;
+  font-size: 20px;
+  color: #f1f1f1;
+  margin-top: 20px;
+}
+
+.about .aboutImg {
+  width: 50%;
+  min-height: 100%;
+}
+
+.about .aboutImg img {
+  width: 650px;
+  height: 550px;
+  float: right;
+  position: absolute;
+  bottom: -60px;
+  right: -55px;
+}
+
+.findMain h1 {
+  text-align: center;
+  margin-top: 90px;
+  font-size: 40px;
+  font-weight: 600;
+  color: #3e80ff;
+}
+
+.findMain .findSearch {
+  width: 50%;
+  position: relative;
+  padding-top: 90px;
+  margin: auto;
+}
+
+.findMain .findSearch span {
+  margin: auto;
+  position: absolute;
+  height: 70px;
+  display: flex;
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 25px;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #ffffff;
+  box-shadow: 7px 6px 10px rgba(122, 122, 122, 0.109);
+}
+
+.findMain .findSearch span i {
+  position: absolute;
+  left: 0;
+  width: 10%;
+  font-size: 22px;
+  color: #87878796;
+  text-align: center;
+}
+
+.findMain .findSearch span input {
+  width: 82%;
+  height: 100%;
+  border: none;
+  font-size: 22px;
+}
+
+.findMain .findSearch span input::placeholder {
+  font-weight: 500;
+  color: #6e6e6e;
+}
+
+.findMain .findSearch span button {
+  display: flex;
+  position: absolute;
+  right: 0;
+  width: 70px;
+  height: 100%;
+  border-radius: 25px;
+  outline: none;
+  border: none;
+  background-color: #3e80ff;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease;
+}
+
+.findMain .findSearch span button i {
+  height: 25px;
+  width: 100%;
+  font-size: 27px;
+  color: #ffffff;
+}
+
+.findMain .findSearch span button:hover {
+  background-color: #3672e2;
+  cursor: pointer;
+}
+
+.findImg {
+  position: absolute;
+  bottom: -6px;
+}
+
+.findImg #birds {
+  animation: birds 3s infinite alternate;
+}
+
+@keyframes birds {
+  from {
+    transform: translateX(-2px);
+    transform: translateY(-2px);
+  }
+  to {
+    transform: translateX(2px);
+    transform: translateY(2px);
+  }
+}
+
+.contact {
+  position: relative;
+  height: 75vh;
+  width: 90%;
+  margin: 100px auto;
+  background-color: #3e80ff;
+  display: flex;
+  align-items: center;
+}
+
+.contact .formLeft {
+  margin: 0;
+  height: 100%;
+  width: 70%;
+  padding-left: 70px;
+  padding-top: 30px;
+}
+
+.contact .formLeft h1 {
+  width: 300px;
+  font-size: 50px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+.contact .formLeft .form-control {
+  height: 90px;
+}
+
+.contact .formLeft .form-control label {
+  display: block;
+  font-size: 18px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.contact .formLeft .form-control input,
+.contact .formLeft .form-control textarea {
+  width: 90%;
+  height: 40px;
+  border: none;
+  background: none;
+  border-bottom: 2px solid #f1f1f1;
+  font-size: 18px;
+  color: #ffffff;
+  transition: 0.2s ease;
+}
+
+.contact .formLeft .form-control input:focus,
+.contact .formLeft .form-control textarea:focus {
+  border-color: #ffffff;
+  box-shadow: 3px 3px 5px #1863ee8e;
+}
+
+.contact .formLeft .form-control input[type="email"]:invalid {
+  outline: none;
+  background: none;
+  box-shadow: none;
+  border-bottom-color: red;
+}
+
+.contact .formLeft .form-control textarea {
+  height: 100px;
+}
+
+.contact .formLeft .form-control button {
+  margin-top: 80px;
+  width: 90%;
+  height: 45px;
+  border: none;
+  outline: none;
+  font-weight: 500;
+  font-size: 16px;
+  transition: 0.2s ease;
+  background: none;
+  border: 2px solid white;
+  color: #ffffff;
+}
+
+.contact .formLeft .form-control button:hover {
+  background-color: #ffffff;
+  color: #3e80ff;
+}
+
+.contact .formRight {
+  width: 50%;
+  height: 35%;
+  position: relative;
+}
+
+.contact .formRight img {
+  width: 83%;
+  position: absolute;
+  top: 10px;
+  left: 180px;
+}
+
+.searchNav {
+  width: 100%;
+  height: 80px;
+  background-color: #3e80ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.searchNav span {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  height: 40px;
+  background: #ffffff;
+}
+
+.searchNav span i {
+  text-align: center;
+  padding-left: 10px;
+  color: #87878796;
+}
+
+.searchNav span input {
+  width: 100%;
+  border: none;
+  margin-left: 10px;
+}
+
+.searchNav span button {
+  background: #3e80ff;
+  height: 40px;
+  border: 1.4px solid white;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease;
+}
+
+.searchNav span button:hover {
+  background-color: #3672e2;
+}
+
+.searchNav span button i {
+  width: 40px;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  padding-left: 0;
+}
+
+.pg {
+  width: 90%;
+  margin: auto;
+  height: 100vh;
+  display: flex;
+}
+
+.pg .leftSideBar {
+  overflow: scroll;
+  position: relative;
+  width: 22%;
+  height: 100vh;
+  border-left: 2px solid #d6d6d6;
+  border-right: 2px solid #d6d6d6;
+  border-bottom: 2px solid #d6d6d6;
+  background-color: #ffffff;
+  padding: 10px 20px;
+}
+
+.pg .leftSideBar .sideBarHeading {
+  display: flex;
+  height: 40px;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.pg .leftSideBar .sideBarHeading h3 {
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.pg .leftSideBar .sideBarHeading p {
+  color: #3e80ff;
+  font-size: 16px;
+}
+
+.pg .leftSideBar .sideBarSection {
+  margin-top: 30px;
+}
+
+.pg .leftSideBar .sideBarSection h4 {
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.pg .leftSideBar .sideBarSection label {
+  display: block;
+  margin-top: 8px;
+}
+
+.pg .leftSideBar .sideBarSection label span {
+  padding-left: 10px;
+  color: #383838fa;
+  font-size: 16px;
+}
+
+.pg .leftSideBar .sideBarSection label input[type="radio"] {
+  display: none;
+  margin-right: 10px;
+}
+
+.pg .leftSideBar .sideBarSection label input[type="radio"] + *::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 10px;
+  height: 10px;
+  margin-right: 0.7rem;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 0.2rem;
+  border-color: gray;
+}
+
+.pg .leftSideBar .sideBarSection label input[type="radio"]:checked + * {
+  color: #3e80ff;
+}
+
+.pg .leftSideBar .sideBarSection label input[type="radio"]:checked + *::before {
+  background: radial-gradient(#3e80ff 0%, #3e80ff 40%, transparent 50%, transparent);
+  border-color: #3e80ff;
+}
+
+.pg .leftSideBar .locality {
+  /* Hide the browser's default checkbox */
+  /* Create a custom checkbox */
+  /* On mouse-over, add a grey background color */
+  /* When the checkbox is checked, add a blue background */
+  /* Create the checkmark/indicator (hidden when not checked) */
+  /* Show the checkmark when checked */
+  /* Style the checkmark/indicator */
+}
+
+.pg .leftSideBar .locality label {
+  width: 40px;
+  display: block;
+  position: relative;
+  padding-left: 36px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  user-select: none;
+  color: #383838fa;
+}
+
+.pg .leftSideBar .locality label input {
+  display: none;
+}
+
+.pg .leftSideBar .locality .checkmark {
+  position: absolute;
+  top: 4px;
+  left: 10px;
+  height: 15px;
+  width: 15px;
+  background-color: none;
+  border: 2px solid #6e6e6e;
+}
+
+.pg .leftSideBar .locality label:hover input ~ .checkmark {
+  background-color: #e6e6e6;
+}
+
+.pg .leftSideBar .locality label input:checked ~ .checkmark {
+  background-color: #3e80ff;
+  border-color: #3e80ff;
+}
+
+.pg .leftSideBar .locality .checkmark::after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.pg .leftSideBar .locality label input:checked ~ .checkmark::after {
+  display: block;
+}
+
+.pg .leftSideBar .locality label .checkmark::after {
+  left: 4px;
+  top: 0px;
+  width: 2px;
+  height: 8px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.pg .leftSideBar .sliderContainer {
+  width: 100%;
+  /* The slider itself */
+  /* Mouse-over effects */
+  /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+}
+
+.pg .leftSideBar .sliderContainer .slider {
+  /* Override default CSS styles */
+  appearance: none;
+  margin: 0 10px;
+  width: 90%;
+  /* Full-width */
+  height: 10px;
+  /* Specified height */
+  background: #d3d3d3;
+  /* Grey background */
+  outline: none;
+  /* Remove outline */
+  opacity: 0.7;
+  /* Set transparency (for mouse-over effects on hover) */
+  /* 0.2 seconds transition on hover */
+  transition: opacity 0.2s;
+  border-radius: 25px;
+}
+
+.pg .leftSideBar .sliderContainer .slider:hover {
+  opacity: 1;
+  /* Fully shown on mouse-over */
+}
+
+.pg .leftSideBar .sliderContainer .slider::-webkit-slider-thumb {
+  /* Override default look */
+  appearance: none;
+  width: 20px;
+  /* Set a specific slider handle width */
+  height: 20px;
+  border-radius: 50%;
+  background: #f1f1f1;
+  /* Green background */
+  cursor: pointer;
+  /* Cursor on hover */
+}
+
+.pg .leftSideBar .sliderContainer .slider::-moz-range-thumb {
+  width: 20px;
+  /* Set a specific slider handle width */
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #3e80ff;
+  background: #f1f1f1;
+  /* Green background */
+  cursor: pointer;
+  /* Cursor on hover */
+}
+
+.pg .leftSideBar .sliderContainer input[type="range"]::-moz-range-progress {
+  height: 10px;
+  border-radius: 25px;
+  background-color: #3e80ff;
+}
+
+.pg .leftSideBar .price .priceAmount {
+  display: flex;
+  width: 90%;
+  margin: 8px auto;
+  justify-content: space-between;
+}
+
+.pg .leftSideBar .price .priceAmount span {
+  display: inline-block;
+}
+
+.pg .leftSideBar .price .priceAmount span p {
+  display: inline;
+  font-size: 16px;
+}
+
+.pg .leftSideBar .price .priceAmount span span {
+  font-size: 16px;
+}
+
+.pg .leftSideBar .sideBarButton {
+  margin-top: 50px;
+}
+
+.pg .leftSideBar .sideBarButton button {
+  width: 80px;
+  height: 40px;
+  background: #3e80ff;
+  border: none;
+  outline: none;
+  text-align: center;
+  color: white;
+  font-weight: 500;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.pg .leftSideBar .sideBarButton button:hover {
+  background-color: #3672e2;
+}
+
+.pg .pgGridRight {
+  margin-left: 100px;
+  margin-top: 30px;
+  width: 100%;
+}
+
+.pg .pgGridRight h1 {
+  font-size: 30px;
+  font-weight: 600;
+  text-align: end;
+  display: inline;
+}
+
+.pg .pgGridRight span {
+  font-weight: 600;
+  font-size: 34px;
+  margin-left: 5px;
+  color: #3e80ff;
+}
+
+.pg .pgGridRight .pgGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 270px);
+  grid-row-gap: 70px;
+  margin-top: 50px;
+  justify-content: space-evenly;
+}
+
+.pg .pgGridRight .pgGrid .grid-item {
+  width: 100%;
+  height: 370px;
+  margin: auto;
+  transition: 0.4s ease;
+  box-shadow: 10px 10px 20px rgba(122, 122, 122, 0.109);
+}
+
+.pg .pgGridRight .pgGrid .grid-item:hover {
+  box-shadow: 15px 15px 20px rgba(122, 122, 122, 0.109), -10px 0px 20px rgba(122, 122, 122, 0.109);
+}
+
+.pg .pgGridRight .pgGrid .grid-item .card-container {
+  height: 100%;
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+.pg .pgGridRight .pgGrid .grid-item .card-container .card-img {
+  height: 50%;
+  width: 100%;
+  background: url("../Img/card.png");
+  background-size: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.pg .pgGridRight .pgGrid .grid-item .card-container .card-content {
+  box-sizing: border-box;
+  width: 90%;
+  height: 30%;
+  overflow: hidden;
+  margin: auto;
+}
+
+.pg .pgGridRight .pgGrid .grid-item .card-container .card-content span {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0 5px;
+  color: #4d4d4d;
+}
+
+.pg .pgGridRight .pgGrid .grid-item .card-container .card-content span .card-name {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.pg .pgGridRight .pgGrid .grid-item .card-container .card-content span .card-gender {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.pg .pgGridRight .pgGrid .grid-item .card-container .card-content .card-address {
+  color: #727272;
+  font-size: 13px;
+}
+
+.pg .pgGridRight .pgGrid .grid-item .card-container .card-content .distance {
+  display: flex;
+  font-size: 13px;
+  color: #727272;
+  margin-bottom: 10px;
+}
+
+.pg .pgGridRight .pgGrid .grid-item .card-container hr {
+  border: 1px solid #dadada;
+}
+
+.pg .pgGridRight .pgGrid .grid-item .card-container .card-bottom {
+  width: 95%;
+  margin: 0;
+  display: flex;
+  height: 20%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pg .pgGridRight .pgGrid .grid-item .card-container .card-bottom span {
+  width: 50%;
+}
+
+.pg .pgGridRight .pgGrid .grid-item .card-container .card-bottom span p {
+  font-size: 12px;
+  color: #727272;
+  font-weight: 400;
+}
+
+.pg .pgGridRight .pgGrid .grid-item .card-container .card-bottom span .rupee {
+  width: 100%;
+  height: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin: 7px 0;
+  color: #141414;
+}
+
+.pg .pgGridRight .pgGrid .grid-item .card-container .card-bottom span .rupee i {
+  font-size: 18px;
+  margin-right: 2px;
+  font-weight: 300;
+}
+
+.pg .pgGridRight .pgGrid .grid-item .card-container .card-bottom span .rupee p {
+  font-size: 14px;
+  color: #141414;
+}
+
+.pg .pgGridRight .pgGrid .grid-item .card-container .card-bottom button {
+  background: #3e80ff;
+  color: #ffffff;
+  border: none;
+  outline: none;
+  padding: 7px 25px;
+  border-radius: 5px;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.pg .pgGridRight .pgGrid .grid-item .card-container .card-bottom button:hover {
+  background-color: #3672e2;
+}
+/*# sourceMappingURL=style.css.map */
